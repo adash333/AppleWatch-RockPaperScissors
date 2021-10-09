@@ -23,16 +23,25 @@ struct ContentView: View {
                 Image("gu")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
+                    .onLongPressGesture {
+                        answerNumber = 0
+                    }
                 Text("グー")
             } else if answerNumber == 2 {
                 Image("choki")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
+                    .onLongPressGesture {
+                        answerNumber = 0
+                    }
                 Text("チョキ")
             } else {
                 Image("pa")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
+                    .onLongPressGesture {
+                        answerNumber = 0
+                    }
                 Text("パー")
             }
             
